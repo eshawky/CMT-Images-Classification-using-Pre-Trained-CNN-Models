@@ -52,14 +52,13 @@ class Configurations:
 
   IMAGE_WIDTH  = 128
   IMAGE_HEIGHT = 128
-  BATCH_SIZE   = 64  
   test_size    = 0.20
   learning_rate= 0.001
   batch_size   = 16
   validation_perentage = 0.05 #5%
 
   #All these parameter should be changed based on your dataset
-  Data_Path    = "E:\\Research_Abo\\Datasets\\animals-13-01563-s001\\Python Code\\CMT Dataset\\"
+  Data_Path    = "E:\\Research\\Datasets\\animals-13-01563-s001\\Python Code\\CMT Dataset\\"
   CMT_labels   = ['benign', 'malignant']
   CMT_values   = [0       ,     1      ]
   Num_Classes  = len(CMT_labels)
