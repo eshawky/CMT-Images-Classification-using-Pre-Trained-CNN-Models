@@ -324,12 +324,6 @@ class Models:
     model.add(layers.Dense(512, activation='relu'))
     model.add(Dropout(0.5))
 
-    #If labels are one-hot-encoding, put units=2, loss = categorical
-    model.add(layers.Dense(units=Num_classes, activation = tf.nn.softmax))
-    model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
-
-    print(model.summary())
-
     return model
     
   def VGG_Model(self, IMAGE_WIDTH, IMAGE_HEIGHT):
