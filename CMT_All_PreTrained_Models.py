@@ -385,13 +385,13 @@ class Models:
     elif Current_CNN == 'MobileNet':
         model = self.MobileNet(IMAGE_WIDTH, IMAGE_HEIGHT)
 
-    elif Current_CNN == 'DenseNet201':
+    elif Current_CNN == 'Inception':
         model = self.Inception_Model(IMAGE_WIDTH, IMAGE_HEIGHT)
 
     elif Current_CNN == 'InceptionResNet':
         model = self.InceptionResNet_Model(IMAGE_WIDTH, IMAGE_HEIGHT)
 
-    elif Current_CNN == CNN_Model[6]:
+    elif Current_CNN == 'DenseNet201':
         model = self.DenseNet_Model(IMAGE_WIDTH, IMAGE_HEIGHT)
 
     elif Current_CNN == 'Xception':
